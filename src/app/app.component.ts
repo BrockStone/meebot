@@ -13,23 +13,24 @@ import { FriendsPage } from '../pages/friends/friends';
 @Component({
   templateUrl: 'app.html'
 })
+
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  // make HelloIonicPage the root (or first) page
-  rootPage: any = HelloIonicPage;
+  // make HelloMeebotPage the root (or first) page
+  rootPage: any = HelloMeebotPage;
   pages: Array<{title: string, component: any}>;
 
-  constructor(
-    public platform: Platform,
-    public menu: MenuController
-  ) {
+  constructor(public platform: Platform, public menu: MenuController) {
     this.initializeApp();
 
-    // set our app's pages
+    // set meebot pages
     this.pages = [
-      { title: 'Hello Ionic', component: HelloIonicPage },
-      { title: 'My First List', component: ListPage }
+      { title: 'Hello MeeBot', component: HelloMeebotPage },
+      { title: 'Wheres that AI?', component: AskbotPage },
+      { title: 'We need a brain first...', component: AnswerbotPage },
+      { title: 'Wheres all my friends?', component: FriendsPage },
+      { title: 'My First Meebot', component: MeebotPage }
     ];
   }
 
