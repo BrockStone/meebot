@@ -1,12 +1,14 @@
+// Global component imports
 import { Component, ViewChild } from '@angular/core';
-
 import { Platform, MenuController, Nav } from 'ionic-angular';
-
 import { StatusBar, Splashscreen } from 'ionic-native';
 
-import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
-import { ListPage } from '../pages/list/list';
-
+// Meebot class imports
+import { HelloMeebotPage } from '../pages/helloMeebot/helloMeebot';
+import { AskbotPage } from '../pages/askbot/askbot';
+import { AnswerbotPage } from '../pages/answerbot/answerbot';
+import { MeebotPage } from '../pages/meebot/meebot';
+import { FriendsPage } from '../pages/friends/friends';
 
 @Component({
   templateUrl: 'app.html'
