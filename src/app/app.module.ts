@@ -1,16 +1,23 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
-import { ItemDetailsPage } from '../pages/item-details/item-details';
-import { ListPage } from '../pages/list/list';
+
+// Meebot class imports
+import { HelloMeebotPage } from '../pages/hello-meebot/hello-meebot';
+import { AskbotPage } from '../pages/askbot/askbot';
+import { AnswerbotPage } from '../pages/answerbot/answerbot';
+import { MeebotPage } from '../pages/meebot/meebot';
+import { FriendsPage } from '../pages/friends/friends';
 
 @NgModule({
   declarations: [
     MyApp,
-    HelloIonicPage,
-    ItemDetailsPage,
-    ListPage
+    HelloMeebotPage,
+    AskbotPage,
+    AnswerbotPage,
+    MeebotPage,
+    FriendsPage
+
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -18,10 +25,12 @@ import { ListPage } from '../pages/list/list';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HelloIonicPage,
-    ItemDetailsPage,
-    ListPage
+    HelloMeebotPage,
+    AskbotPage,
+    AnswerbotPage,
+    MeebotPage,
+    FriendsPage
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
+  providers: []
 })
 export class AppModule {}
