@@ -4,7 +4,7 @@ import { Platform, MenuController, Nav } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
 // Meebot class imports
-import { HelloMeebotPage } from '../pages/helloMeebot/helloMeebot';
+import { HelloMeebotPage } from '../pages/hello-meebot/hello-meebot';
 import { AskbotPage } from '../pages/askbot/askbot';
 import { AnswerbotPage } from '../pages/answerbot/answerbot';
 import { MeebotPage } from '../pages/meebot/meebot';
