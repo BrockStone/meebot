@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 @Component({
-  selector: 'page-organizations',
+  selector: 'page-hello-meebot',
   templateUrl: 'hello-meebot.html'
 })
 export class HelloMeebotPage {
