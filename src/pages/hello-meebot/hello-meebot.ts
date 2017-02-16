@@ -1,22 +1,15 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
 
-/*
-  Generated class for the HelloMeebot page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
-*/
 @Component({
-  selector: 'page-hello-meebot',
+  selector: 'page-organizations',
   templateUrl: 'hello-meebot.html'
 })
 export class HelloMeebotPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  constructor(public navCtrl: NavController) {}
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad HelloMeebotPage');
+    console.log('Hello helloMeebot Page');
   }
-
 }
